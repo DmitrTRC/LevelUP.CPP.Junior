@@ -15,6 +15,9 @@ message(STATUS "MenuClass Output directory: ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}")
 #Generate the shared library from the library sources
 
 add_library(Menu_Lib SHARED
+            include/M_Helper.hpp
+            include/IMenuItem.hpp
+            src/Menu_Item.cpp
             src/Menu.cpp
             )
 
